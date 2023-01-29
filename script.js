@@ -5,7 +5,7 @@ function callOPENAI(inp) {
   xhr.open("POST", url, false);
 
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.setRequestHeader("Authorization", "Bearer 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");
+  xhr.setRequestHeader("Authorization", "Bearer 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");
 
   xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
@@ -15,11 +15,11 @@ function callOPENAI(inp) {
   };
 
   xhr.onload = function() {
-  // alert ("Response received"+xhr.responseText);
+  //alert ("Response received"+xhr.responseText);
   }
 
   var data = JSON.stringify({model:"text-davinci-003",prompt:"You: "+inp+"?\nMarv:",temperature:0.5,max_tokens:60,top_p:0.3,frequency_penalty:0.5,  presence_penalty:0.0});
-
+//alert(data);
  // var data = JSON.stringify(model:"text-davinci-003",prompt:"You: What time is it?\nMarv:\n", temperature:0.5, max_tokens:60,top_p:0.3,frequency_penalty:0.5,presence_penalty:0.0);
 
   xhr.send(data);
