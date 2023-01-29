@@ -28,3 +28,4 @@ function callOPENAI(inp) {
   return (outtxt2.text);
   //return (xhr.responseText);
 }
+

@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <div class="dropdown">
+  <button type="button" class=".bg-danger dropdown-toggle" data-bs-toggle="dropdown">
+    Home
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="index.html">Home</a></li>
+    <li><a class="dropdown-item" href="blarb.html">About</a></li>
+  </ul>
+</div>
+    
   </head>
 
   <!-- Latest compiled and minified CSS -->
@@ -10,27 +21,29 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>health smth</h1>
-  <p>Resize this responsive page to see the effect!</p>
+<div class="container-fluid p-5 bg-dark text-white text-center">
+  <h1>About Me!</h1>
+  <p>How this all came to be</p>
 </div>
 
-<div class="container mt-5">
+<div class="container mt-4">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Why?</h3>
+      <p>Mental illnesses have always run in my family and I constantly see people struggling with it. Seeing this my whole life, I know how important of an issue this is. To me, this project is very important.</p>
+      <p>So many people struggle with mental health issues. As a teenager, I've seen peers go through it and even myself has struggled with mental health. In times likes this, sometimes all a person needs is someone to talk to.</p>
+    </div>
+  <div class = "row">
+    <div class="col-sm-4">
+      <h3>How?</h3>
+      <p>My vision was to create an AI model with characteristics of emotions and sensitivity to talk to that would have the looks of a small pet. This would help the person find the AI bot more easy to talk to. I also planned to eventually convert this into an app for easier use.</p>
+      <p>This is a hackathon and not everything can be programmed in one day. I programmed the key parts of what I wanted in this project. This has the potential to go far and I would like to develop it further given the chance!</p>
+      <p>Due to an efficiency constraint, I used OpenAI's Marv bot and pulled it as an API. This took many hours to figure out due t0 the inconsistency of converting a Curl file into Javascript and trying to send data back to the source. With the time left, I designed the html of the website, incorporating Bootstrap 5. </p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Column 3</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>What after?</h3>
+      <p>I plan to more thoroughly develop this till around June and expiriment with fine-tuning Ghat GPT when the API gets released. I also will work on a graphic 3d model to make this bot more visually appealing and easy to talk to!</p>
+      <p>At one point, I may request OpenAI for publishing the app and seeing how I can improve it after that!</p>
     </div>
   </div>
 </div>
