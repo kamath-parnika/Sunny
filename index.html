@@ -29,26 +29,30 @@ var resp = callOPENAI(document.getElementById("fname").value);
 </div>
 <div class="container-fluid p-5 bg-dark text-white center">
   <h1 >Sunny</h1>
-  <p>The AI Model To Chat With You!</p>
-  <p id="demo">A Paragraph</p>
+  <p>Your Friendly Bot To Chat Anytime!</p>
+  <p id="demo">Sunny says : </p>
 <form>
   <input type="text" id="fname" name="fname" value="What time is it"><br>
 </form>
-<button type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ask a question to OpenAI's Marv bot!" onclick="miFun()">Enter</button>
+<button type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ask a question for Sunny!" onclick="myFunction()">Enter</button>
+
 <script>
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 </script>
-<div class="toast show">
+
+<!--
+  <div class="toast show">
   <div class="toast-header">
     Warning
     <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
   </div>
   <div class="toast-body bg-danger">
-    This demo is not complete. Thank you!
-  </div>
+    The JavaScript file is not functioning properly.
+  </div> 
+  -->
   <script>
 document.getElementById("toastbtn").onclick = function() {
   var toastElList = [].slice.call(document.querySelectorAll('.toast'))
